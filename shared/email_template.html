@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .container {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+    .header {
+      background-color: #007bff;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-size: 24px;
+    }
+    .content {
+      padding: 30px;
+      color: #333333;
+    }
+    .otp {
+      font-size: 28px;
+      color: #007bff;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    .footer {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: #999999;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">OTP Verification</div>
+    <div class="content">
+      <p>Hello,</p>
+      <p>Your One Time Password (OTP) is:</p>
+      <div class="otp">{{otp}}</div>
+      <p>Please use this OTP to complete your verification process. This code is valid for a limited time.</p>
+      <p>Stay connected with us!</p>
+    </div>
+    <div class="footer">
+      This is an automated email, please do not reply. If you have any issues, contact our support team at 
+      <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a>.
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f7f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      margin: 20px;
+      border: 1px solid #e0e0e0;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+    .header {
+      background: linear-gradient(135deg, #23303e, #3a4b5c);
+      color: #ffffff;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .content {
+      padding: 30px;
+      color: #333333;
+      line-height: 1.6;
+    }
+    .otp {
+      font-size: 32px;
+      color: #23303e;
+      font-weight: bold;
+      margin: 25px 0;
+      text-align: center;
+      padding: 15px;
+      background-color: #f0f4f8;
+      border-radius: 8px;
+      display: inline-block;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    .footer {
+      background-color: #f9f9f9;
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #999999;
+      border-top: 1px solid #e0e0e0;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #0056b3;
+    }
+    .contact-info {
+      margin-top: 15px;
+      font-size: 12px;
+      color: #555555;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #ffffff;
+      background: linear-gradient(135deg, #23303e, #3a4b5c);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .button:hover {
+      background: linear-gradient(135deg, #3a4b5c, #23303e);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">Sari Primary School - OTP Verification</div>
+    <div class="content">
+      <p>Dear Parent/Guardian,</p>
+      <p>Your One Time Password (OTP) for verification is:</p>
+      <div class="otp">{{otp}}</div>
+      <p>Please use this OTP to complete your verification process. This code is valid for a limited time.</p>
+      <p>We appreciate your support and cooperation.</p>
+      <p>Best regards,<br>Sari Primary School</p>
+      <button class="button" onclick="window.location.href='#'">Verify Now</button>
+    </div>
+    <div class="footer">
+      This is an automated email from Sari Primary School, please do not reply. For any assistance, contact our school at 
+      <a href="mailto:sariprimaryschool.1@gmail.com">sariprimaryschool.1@gmail.com</a>.
+      <div class="contact-info">
+        Contact us: sariprimaryschool.1@gmail.com | Phone: (Will let you know)
+      </div>
+    </div>
+  </div>
+</body>
+</html>
