@@ -53,7 +53,7 @@ This project is a *School Management System* designed to manage users (admin, ow
    - Launch XAMPP and start Apache and MySQL services.
    - Access the project in your browser:
      
-     http://localhost/school-management-system-main_2/
+     http://localhost/school-management-system-main/
      
 
 ---
@@ -132,7 +132,7 @@ sudo /Applications/XAMPP/xamppfiles/xampp stop
    - Ensure the file size and type meet the validation criteria.
 
 3. *Page Not Loading*:
-   - Verify the project URL (http://localhost/school-management-system-main_2/).
+   - Verify the project URL (http://localhost/school-management-system-main/).
    - Check Apache error logs for issues.
 
 ---
